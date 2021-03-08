@@ -16,6 +16,8 @@ export default function HomePage() {
             overflow="hidden"
           >
             <OptimizedImage
+              priority
+              loading="eager"
               alt="Jonas in the japanese tea garden in San Francisco"
               layout="fill"
               src="/images/me.jpeg"
