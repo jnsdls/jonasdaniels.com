@@ -26,10 +26,10 @@
   "exclude": [
     "node_modules"
   ],
-  "baseUrl": "../..",
+  "baseUrl": ".",
   "paths": {
-    "@nighttrax/*": [
-      "packages/*/src"
+    "@jnsdls/*": [
+      "../../packages/*/src"
     ]
   },
 }
