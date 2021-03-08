@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const TITLE = "Jonas Daniels";
+const TITLE = "Jonas Daniels (@jnsdls)";
 const DESCRIPTION =
   "Frontend Engineer @ Twitch. Used to build startups @ Bebo (acq by Twitch). Advisor to startups @ f.inc.";
 const URL = "https://jnsdls.dev";
