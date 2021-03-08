@@ -22,6 +22,8 @@
   },
   "scripts": {
     "build:packages": "lerna run clean --no-private && lerna run build --no-private",
-    "run:www": "cd apps/www && yarn dev"
+    "dev": "cd apps/www && yarn dev",
+    "build": "cd apps/www && yarn build",
+    "start": "cd apps/www && yarn start"
   }
 }
