@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^5.1.1",
+    "lint-staged": "^10.0.10",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.5"
+  },
+  "name": "jonasdaniels.com",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "build:packages": "lerna run clean --no-private && lerna run build --no-private",
+    "run:www": "cd apps/www && yarn dev"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@jnsdls/utils",
+  "version": "0.1.0",
+  "private": false,
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/utils.js",
+  "exports": "./dist/utils.modern.js",
+  "module": "dist/utils.module.js",
+  "unpkg": "dist/utils.umd.js",
+  "scripts": {
+    "build": "microbundle --jsx React.createElement",
+    "dev": "microbundle watch",
+    "clean": "rm -rf dist/"
+  },
+  "dependencies": {
+    "react": "^17.0.1"
+  },
+  "devDependencies": {
+    "microbundle": "^0.13.0",
+    "typescript": "^4.2.3",
+    "lint-staged": "^10.0.10"
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "npm run lint",
+      "npm run format"
+    ]
+  }
+}

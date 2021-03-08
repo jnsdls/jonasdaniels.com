@@ -1,0 +1,40 @@
+{
+  "name": "@jnsdls/react-text-shuffle",
+  "version": "0.1.0",
+  "private": false,
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/react-text-shuffle.js",
+  "exports": "./dist/react-text-shuffle.modern.js",
+  "module": "dist/react-text-shuffle.module.js",
+  "unpkg": "dist/react-text-shuffle.umd.js",
+  "scripts": {
+    "build": "microbundle --jsx React.createElement",
+    "dev": "microbundle watch",
+    "clean": "rm -rf dist/"
+  },
+  "dependencies": {
+    "@jnsdls/utils": "^0.1.0",
+    "calculate-size": "^1.1.1",
+    "framer-motion": "^3.10.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "react-dom": "^17.0.1",
+    "framer-motion": "^3.10.0",
+    "react": "^17.0.1",
+    "microbundle": "^0.13.0",
+    "typescript": "^4.2.3",
+    "@types/react": "^17.0.3",
+    "lint-staged": "^10.0.10"
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "npm run lint",
+      "npm run format"
+    ]
+  }
+}
