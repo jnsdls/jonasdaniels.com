@@ -29,6 +29,7 @@
     "swr": "^0.4.2",
     "urql": "^2.0.1",
     "focus-visible": "^5.2.0",
+    "react-icons": "^4.2.0",
     "@jnsdls/components": "*",
     "@jnsdls/react-text-shuffle": "*"
   },
