@@ -46,7 +46,7 @@ export default function HomePage() {
                     <OptimizedImage
                       priority
                       loading="eager"
-                      alt="Jonas in the japanese tea garden in San Francisco"
+                      alt="Jonas in 2019"
                       layout="fill"
                       src="/images/me.jpeg"
                     />
