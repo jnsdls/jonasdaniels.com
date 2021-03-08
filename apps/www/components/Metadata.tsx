@@ -3,7 +3,7 @@ import Head from "next/head";
 const TITLE = "Jonas Daniels";
 const DESCRIPTION =
   "Frontend Engineer @ Twitch. Used to build startups @ Bebo (acq by Twitch). Advisor to startups @ f.inc.";
-const URL = "https://jonasdaniels.com";
+const URL = "https://jnsdls.dev";
 const IMAGE = `${URL}/images/me.jpeg`;
 
 interface MetaDataProps {
@@ -24,7 +24,7 @@ export const MetaData: React.FC<MetaDataProps> = ({
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>{title}</title>
       <meta property="og:title" content={title} />
-      <meta property="og:site_name" content="jonasdaniels.com" />
+      <meta property="og:site_name" content="jnsdls.dev" />
       <meta name="description" content={description} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={image} />
