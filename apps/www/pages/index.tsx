@@ -27,6 +27,7 @@ export default function HomePage() {
           <Box>
             <Container maxW="800px">
               <SimpleGrid
+                as="main"
                 spacing={8}
                 w="100%"
                 background="var(--accents-1)"
@@ -76,6 +77,7 @@ export default function HomePage() {
           <Box>
             <Container maxW="800px">
               <SimpleGrid
+                as="aside"
                 columns={[3]}
                 spacing={8}
                 w="100%"
