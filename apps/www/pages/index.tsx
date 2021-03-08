@@ -16,7 +16,7 @@ import { Link, OptimizedImage } from "@jnsdls/components";
 import { ReactTextCycle } from "@jnsdls/react-text-shuffle";
 import React from "react";
 import { FiGithub, FiInstagram, FiTwitter } from "react-icons/fi";
-import { MetaData } from "../components/MetaData";
+import { MetaData } from "../components/Metadata";
 
 export default function HomePage() {
   return (
