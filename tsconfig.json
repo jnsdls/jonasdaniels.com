@@ -5,7 +5,7 @@
     "paths": {
       "@jnsdls/*": ["./packages/*/src"]
     },
-      "target": "esnext",
+      "target": "es5",
       "lib": ["dom", "dom.iterable", "esnext"],
       "skipLibCheck": true,
       "strict": true,

@@ -5,7 +5,6 @@
   "license": "MIT",
   "source": "src/index.ts",
   "main": "dist/utils.js",
-  "exports": "./dist/utils.modern.js",
   "module": "dist/utils.module.js",
   "unpkg": "dist/utils.umd.js",
   "types": "dist/index.d.ts",
