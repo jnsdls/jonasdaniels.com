@@ -19,7 +19,7 @@
     "lint:types": "tsc --noEmit"
   },
   "files": [
-    "./dist"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
