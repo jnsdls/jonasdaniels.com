@@ -4,26 +4,31 @@
     "packages/*",
     "apps/*"
   ],
-  "dependencies": {
+  "name": "jonasdaniels.com",
+  "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.14.2",
     "@typescript-eslint/parser": "^4.14.2",
     "eslint": "^7.19.0",
-    "eslint-config-prettier": "^8.0.0",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "lerna": "^4.0.0",
     "husky": "^5.1.1",
     "lint-staged": "^10.0.10",
     "prettier": "^2.2.1",
     "typescript": "^4.1.5"
   },
-  "name": "jonasdaniels.com",
-  "devDependencies": {
-    "lerna": "^4.0.0"
-  },
   "scripts": {
-    "build:packages": "lerna run clean --no-private && lerna run build --no-private",
+    "build:packages": "lerna run clean --no-private && lerna run build --no-private --stream",
     "dev": "cd apps/www && yarn dev",
     "build": "cd apps/www && yarn build",
-    "start": "cd apps/www && yarn start"
-  }
+    "start": "cd apps/www && yarn start",
+    "prepublish": "yarn lint && yarn build:packages",
+    "canary": "lerna publish --no-private --canary",
+    "publish": "lerna publish --no-private",
+    "lint": "yarn lint:src && yarn lint:types",
+    "lint:src": "lerna run lint:src --no-private --stream",
+    "lint:types": "lerna run lint:types --no-private --stream"
+  },
+  "version": "1.0.0"
 }
