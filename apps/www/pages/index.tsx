@@ -11,6 +11,7 @@ import {
   LinkOverlay,
   SimpleGrid,
   Stack,
+  Text,
 } from "@chakra-ui/react";
 import { Link, OptimizedImage } from "@jnsdls/components";
 import { ReactTextCycle } from "@jnsdls/react-text-shuffle";
@@ -153,6 +154,43 @@ export default function HomePage() {
           </Box>
         </Stack>
       </Grid>
+      <Box bg="var(--accents-1)">
+        <Container maxW="800px">
+          <SimpleGrid
+            as="footer"
+            py={4}
+            px={8}
+            columns={[1, null, 2]}
+            placeItems="center"
+            spacing={2}
+          >
+            <Text fontSize="sm">
+              Built with{" "}
+              <Link
+                isExternal
+                href="https://nextjs.org"
+                color="var(--foreground)"
+              >
+                Next
+              </Link>{" "}
+              &{" "}
+              <Link
+                isExternal
+                href="https://chakra-ui.com"
+                color="var(--foreground)"
+              >
+                Chakra
+              </Link>
+            </Text>
+            <Text fontSize="sm">
+              Hosted on{" "}
+              <Link isExternal href="https://zeet.co" color="var(--foreground)">
+                Zeet
+              </Link>
+            </Text>
+          </SimpleGrid>
+        </Container>
+      </Box>
     </>
   );
 }

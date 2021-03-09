@@ -19,16 +19,16 @@ const config = {
 const styles = {
   global: (props: Record<string, any>) => ({
     html: {
-      "--brand": brandColor[500],
       "--background": mode("#f9f9f9", "#000")(props),
       "--accents-1": mode(getColor(defaultTheme, "#fff"), "#111")(props),
-      "--accents-2": mode(getColor(defaultTheme, "gray.50"), "#303030")(props),
       "--foreground": mode(
-        getColor(defaultTheme, "gray.900"),
-        getColor(defaultTheme, "whiteAlpha.900")
+        getColor(defaultTheme, "#000"),
+        getColor(defaultTheme, "#fff")
       )(props),
-      "--guideDashedColor": "rgba(255,255,255,0.09)",
-      "--guideSolidColor": "rgba(255,255,255,0.06)",
+      "--secondary": mode(
+        getColor(defaultTheme, "blackAlpha.800"),
+        getColor(defaultTheme, "whiteAlpha.800")
+      )(props),
     },
     body: {
       color: "var(--foreground)",
@@ -37,6 +37,9 @@ const styles = {
       marginLeft: 0,
       marginRight: 0,
       maxWidth: "100%",
+    },
+    p: {
+      color: "var(--secondary)",
     },
   }),
 };
