@@ -8,6 +8,7 @@
   "exports": "./dist/components.modern.js",
   "module": "dist/components.module.js",
   "unpkg": "dist/components.umd.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "microbundle --jsx React.createElement",
     "dev": "microbundle watch",
