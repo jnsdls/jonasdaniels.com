@@ -8,7 +8,13 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { ReactTextSwitchProps, SmurtKeys, ValidFontSettings } from "./types";
+import { OptionalFontSettings, ValidFontSettings } from "../types";
+
+type SmurtKeys = Record<string, number>;
+
+interface ReactTextSwitchProps extends OptionalFontSettings {
+  word: string;
+}
 
 export const ReactTextSwitch: React.FC<ReactTextSwitchProps> = ({
   fontSize,
@@ -118,10 +124,7 @@ export const ReactTextSwitch: React.FC<ReactTextSwitchProps> = ({
   }, [word]);
 
   return (
-    <span
-      ref={mainElRef}
-      style={{ position: "relative", fontSize, fontWeight }}
-    >
+    <span ref={mainElRef} style={{ position: "relative" }}>
       {typeof window !== "undefined" ? (
         <AnimatePresence>
           {letters.map((letter, idx) => (

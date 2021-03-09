@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { ReactTextSwitch } from "./react-text-switch";
-import { ReactTextCycleProps } from "./types";
+import { ReactTextSwitch } from "../ReactTextSwitch";
+import { OptionalFontSettings } from "../types";
+
+interface ReactTextCycleProps extends OptionalFontSettings {
+  words: string[];
+  interval?: number;
+}
 
 export const ReactTextCycle: React.FC<ReactTextCycleProps> = ({
   words,

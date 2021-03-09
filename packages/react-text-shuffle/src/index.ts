@@ -1,2 +1,2 @@
-export * from "./react-text-cycle";
-export * from "./react-text-switch";
+export * from "./ReactTextCycle";
+export * from "./ReactTextSwitch";
